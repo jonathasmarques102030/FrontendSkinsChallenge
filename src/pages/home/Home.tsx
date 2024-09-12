@@ -14,9 +14,12 @@ import {
 } from "@chakra-ui/react";
 import { SearchIcon } from "@chakra-ui/icons";
 
-import { useItems } from "./useItems";
+import { formatPrice } from "../../utils/formatPrice";
 
-export default function Inicio() {
+import { useItems } from "./useItems";
+import React from "react";
+
+export default function Inicio(){
   const {
     searchTerm,
     items,
@@ -129,7 +132,7 @@ export default function Inicio() {
                     </Heading>
                     <Flex justify="space-between" align="center" mb={2}>
                       <Text fontSize="lg" fontWeight="bold" color="green.500">
-                        R$ {produto.price},00
+                        {formatPrice(produto.price)}
                       </Text>
                       <Text fontSize="sm" color="gray.600">
                         Float: {produto.float}

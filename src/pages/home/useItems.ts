@@ -1,4 +1,5 @@
 import { useState, useEffect, useMemo } from "react";
+
 import { takeItems } from "@/services/items";
 
 interface Products {
@@ -79,11 +80,11 @@ export function useItems() {
   useEffect(() => {
     async function fetchData() {
       try {
-        const unidadesFromApi = await takeItems();
-        setProducts(unidadesFromApi);
-        setOriginalProducts(unidadesFromApi);
+        const itemsFromApi = await takeItems();
+        setProducts(itemsFromApi);
+        setOriginalProducts(itemsFromApi);
       } catch (error) {
-        console.error("Erro ao buscar unidades:", error);
+        console.error("Erro ao buscar os items:", error);
       } finally {
         setLoading(false);
       }

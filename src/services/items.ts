@@ -2,7 +2,7 @@ import { api } from "./api";
 
 export async function takeItems() {
   try {
-    const response = await api.get("/item");
+    const response = await api.get("/items");
 
     if (response.status !== 200) {
       throw new Error("Falha ao buscar unidades.");

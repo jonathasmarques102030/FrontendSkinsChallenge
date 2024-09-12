@@ -37,4 +37,5 @@ Abra [http://localhost:3000](http://localhost:3000) no seu browser e use aplica�
 
 ## Decisões técnicas tomadas
 
-O desafio foi pensado no intuito de exibir na tela principal as informações (skins) de uma forma dinâmica, otimizada, responsiva e linear!
+A execução do desafio foi pensada no intuito de exibir na tela principal as informações (skins) de uma forma dinâmica, otimizada,
+responsiva e linear!
