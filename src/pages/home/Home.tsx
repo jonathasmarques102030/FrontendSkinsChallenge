@@ -115,6 +115,7 @@ export default function Inicio(){
                     borderWidth="1px"
                     borderRadius="lg"
                     overflow="hidden"
+                    cursor='pointer'
                     p={4}
                     bg="white"
                     shadow="md"
